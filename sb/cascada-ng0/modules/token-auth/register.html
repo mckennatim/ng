@@ -1,0 +1,31 @@
+<div class="">
+</br></br></br></br>
+<div class="reg">
+<h4>Register</h4>
+Hey {{username}}: {{userNameIs}} {{users.regMessage}}
+	<div class="">
+
+		<form name='regForm' ng-submit="submit()" >
+			<div class=''>
+				<label>username:</label>{{isUser}}  
+				<input type="text"  ng-blur="doesNameExist()" ng-focus="onChange()" ng-model='username' name='nameInp' ng-minlength="3" ng-pattern="nameValid" required ng-trim="false">
+				<span class="error" ng-show="regForm.nameInp.$error.required">*</span>
+				<span class="error" ng-show="regForm.nameInp.$error.pattern">single word only</span>
+				<span class="error" ng-show="regForm.nameInp.$error.minlength">too short</span>
+			</div>
+			<div class=''>
+				<label>email:</label> <input type="email" class="" ng-model='email' name='emailInp'required>
+				<span class="error" ng-show="regForm.emailInp.$error.required">*</span>
+				<span class="error" ng-show="regForm.emailInp.$error.email">*</span>
+			</div>
+			<div class="input-group-btn">
+				<button type="submit" class="" ng-disabled="grey">{{users.regState}}</button>
+			</div>
+		</form> 
+		<div class='form-group'>  
+			<label>apikey:</label> <input type="text" class="" placeholder='' ng-model='apikey'>
+		</div>   
+	</div>
+</div>
+
+</div>

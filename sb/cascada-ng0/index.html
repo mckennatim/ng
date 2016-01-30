@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+  <meta name="description" content="blank description" />
+  <title>ng-module</title>  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0 ">
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.green-blue.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/ca.css">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>  
+<script src="app.js"></script>
+<script src="modules/token-auth/register.js"></script>
+<script src="modules/yard/yard.js"></script>
+<script src="modules/butt/butt.js"></script>
+<script src="modules/spot/spot.js"></script>
+<script src="modules/pond/pond.js"></script>
+
+</head>
+<body ng-app="App">
+
+<nav>
+  <ul>
+    <li class="nav"><a ui-sref="yard"><span >yard</span></a></li>
+    <li class="nav"><a ui-sref="register"><span >register</span></a></li>  
+  </ul>
+</nav>
+<ui-view></ui-view>
+</body>
